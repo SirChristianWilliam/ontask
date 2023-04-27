@@ -1,3 +1,16 @@
 Adding notes file, and committing again to make sure 
 I successfully removed past history commits that 
 displayed my env file with the keys exposed.
+
+Technologies Used:
+
+1. Typescript 
+2. JavaScript 
+3. eslint 
+4. Tailwindcss 
+5. Next.js 
+6. Railway 
+7. PostgreSQL 
+8. Prisma 
+9. HTML 
+10. Postman (testing) 
