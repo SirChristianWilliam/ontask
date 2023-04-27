@@ -1,0 +1,3 @@
+Adding notes file, and committing again to make sure 
+I successfully removed past history commits that 
+displayed my env file with the keys exposed.
