@@ -4,6 +4,7 @@ declare global {
   // eslint-disable-next-line no-var
   var cachedPrisma: PrismaClient;
 }
+// const prisma = new PrismaClient()
 
 let prisma: PrismaClient;
 if (process.env.NODE_ENV === "production") {

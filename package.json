@@ -8,35 +8,36 @@
     "start": "next start",
     "lint": "next lint"
   },
-    "prisma": {
-      "seed": "ts-node -P tsconfig-seed.json -r tsconfig-paths/register --transpileOnly prisma/seed.ts"
-    },
+  "prisma": {
+    "seed": "ts-node -P tsconfig-seed.json -r tsconfig-paths/register --transpileOnly prisma/seed.ts"
+  },
   "dependencies": {
-    "@prisma/client": "4.6.1",
+    "@prisma/client": "^4.13.0",
+    "@types/node": "18.15.12",
+    "@types/react": "18.0.37",
+    "@types/react-dom": "18.0.11",
+    "autoprefixer": "10.4.14",
     "bcrypt": "5.1.0",
     "class-variance-authority": "0.4.0",
     "clsx": "1.2.1",
     "cookie": "0.5.0",
     "css-reset-and-normalize": "2.3.6",
-    "jose": "4.11.1",
-    "react-feather": "2.0.10",
-    "@types/node": "18.15.12",
-    "@types/react": "18.0.37",
-    "@types/react-dom": "18.0.11",
-    "autoprefixer": "10.4.14",
     "eslint": "8.38.0",
     "eslint-config-next": "13.3.0",
+    "jose": "4.11.1",
     "next": "13.3.0",
     "postcss": "8.4.23",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "tailwindcss": "3.3.1",
-    "typescript": "5.0.4"
+    "react-feather": "2.0.10",
+    "tailwindcss": "3.3.1"
   },
   "devDependencies": {
+    "esbuild": "^0.17.18",
     "prisma": "4.6.1",
     "tailwindcss": "3.2.4",
     "ts-node": "10.9.1",
-    "tsconfig-paths": "4.1.1"
+    "tsconfig-paths": "4.1.1",
+    "typescript": "^4.5.5"
   }
 }
