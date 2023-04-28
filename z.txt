@@ -7,7 +7,7 @@ Technologies Used:
 1. Typescript 
 2. JavaScript 
 3. eslint 
-4. Tailwindcss 
+4. Tailwindcss / postcss
 5. Next.js 
 6. Railway 
 7. PostgreSQL 
@@ -15,4 +15,6 @@ Technologies Used:
 9. HTML 
 10. Postman (testing) 
 11. Vercel 
+12. React-Feather (library)
+13. 
  
