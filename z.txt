@@ -14,3 +14,5 @@ Technologies Used:
 8. Prisma 
 9. HTML 
 10. Postman (testing) 
+11. Vercel 
+ 

@@ -1,3 +1,5 @@
+import '@/styles/global.css';
+
 import GlassPane from "@/components/GlassPane";
 
 export default function AuthRootLayout({ children }) {
