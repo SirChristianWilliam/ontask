@@ -43,3 +43,6 @@ export default async function signin(
     res.end();
   }
 }
+
+// These API routes are SERVERLESS
+// They run on Vercel's infrastructure
