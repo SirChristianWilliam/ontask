@@ -2,7 +2,7 @@ Adding notes file, and committing again to make sure
 I successfully removed past history commits that 
 displayed my env file with the keys exposed.
 
-Technologies Used:
+Technologies & Concepts Used:
 
 1. Typescript 
 2. JavaScript 
@@ -16,5 +16,7 @@ Technologies Used:
 10. Postman (testing) 
 11. Vercel 
 12. React-Feather (library)
-13. 
+13. Auth 
+14. JWT (JSON web tokens)
+15. 
  
