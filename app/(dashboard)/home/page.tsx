@@ -10,7 +10,7 @@ import { delay } from "@/lib/async";
 import ProjectCard from "@/components/ProjectCard";
 
 const getData = async () => {
-    await delay(2000);
+    // await delay(2000);
     const user = await getUserFromCookie(cookies())
     const projects = await db.project.findMany({
         where: {
@@ -40,15 +40,13 @@ export default async function Page() {
                     </Suspense>
                 </div>
                 <div className="flex flex-2 grow items-center flex-wrap mt-3 -m-3 ">
-                    {projects.map((project) => (
-                        <div className="w-1/3 p-3" key={project.id}>
-                            <Link href={`/project/${project.id}`}>
-                                <ProjectCard project={project} />
-                            </Link>
-                        </div>
-                    ))}
-
-                    <div className="w-1/3 p-3">{/* new project here */}</div>
+                        {projects.map((project) => (
+                            <div className="w-1/3 p-3" key={project.id}>
+                                <Link href={`/project/${project.id}`}>
+                                    <ProjectCard project={project} />
+                                </Link>
+                            </div>
+                        ))}
                 </div>
                 <div className="mt-6 flex-2 grow w-full flex">
                     <div className="w-full">{/* tasks here */}</div>

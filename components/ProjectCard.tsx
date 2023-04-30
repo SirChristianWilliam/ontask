@@ -1,8 +1,9 @@
-import { FC } from "react";
+import { FC, Suspense } from "react";
 import { Prisma } from "@prisma/client";
 import Card from "./Card";
 import clsx from "clsx";
-
+import { delay } from "@/lib/async";
+import GreetingsSkeleton from "./GreetingsSkeleton";
 const projectWithTasks = Prisma.validator<Prisma.ProjectArgs>()({
   include: { tasks: true },
 });
@@ -34,6 +35,7 @@ const ProjectCard: FC<{ project: ProjectWithTasks }> = ({ project }) => {
   const progress = Math.ceil((completedCount / project.tasks.length) * 100);
 
   return (
+    <Suspense fallback={<GreetingsSkeleton />}>
     <Card className="!px-6 !py-8 hover:scale-105 transition-all ease-in-out duration-200">
       <div>
         <span className="text-sm text-gray-300">
@@ -64,6 +66,7 @@ const ProjectCard: FC<{ project: ProjectWithTasks }> = ({ project }) => {
         </div>
       </div>
     </Card>
+    </Suspense>
   );
 };
 
