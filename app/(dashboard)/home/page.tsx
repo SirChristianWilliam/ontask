@@ -8,9 +8,10 @@ import Link from "next/link";
 import { Suspense } from "react";
 import { delay } from "@/lib/async";
 import ProjectCard from "@/components/ProjectCard";
+import TaskCard from "@/components/TaskCard";
 
 const getData = async () => {
-    // await delay(2000);
+    await delay(1500);
     const user = await getUserFromCookie(cookies())
     const projects = await db.project.findMany({
         where: {
@@ -49,7 +50,7 @@ export default async function Page() {
                         ))}
                 </div>
                 <div className="mt-6 flex-2 grow w-full flex">
-                    <div className="w-full">{/* tasks here */}</div>
+                    <div className="w-full"><TaskCard/></div>
                 </div>
             </div>
         </div>
