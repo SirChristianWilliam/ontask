@@ -1,6 +1,8 @@
 import '@/styles/global.css';
 
 import GlassPane from "@/components/GlassPane";
+import Sidebar from "@/components/Sidebar";
+import Greetings from '@/components/Greetings';
 
 export default function DashboardRootLayout({ children }) {
 
@@ -8,8 +10,10 @@ export default function DashboardRootLayout({ children }) {
         <html lang="en">
             <head />
             <body className="h-screen w-screen candy-mesh p-6">
-                <GlassPane className="w-full h-full flex item-center justify-center">
+                <GlassPane className="w-full h-full flex item-center">
+                    <Sidebar />
                     {children}
+                    
                 </GlassPane>
 
             </body>
