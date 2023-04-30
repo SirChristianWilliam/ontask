@@ -20,3 +20,18 @@ Technologies & Concepts Used:
 14. JWT (JSON web tokens)
 15. 
  
+
+ Saturday April 29th notes:
+
+ So, I can create a user, and the login works correctly. When I 
+ create a new user, the redirect stops working. I think this 
+ has something to do with the authform component pushing to /home. 
+ I think following the tutorial might find a solution for that. 
+ Regardless, the user IS being created as I can see the new users 
+ I made in the railway database I have hosted. When I manually 
+ changed the environment variable's secret key, the redirect worked 
+ as expected once again until I registered for a new user. This means 
+ it's also an issue with the cookies. I'm guessing it's keeping those 
+ cookies ( the user logged in ) and that's why the redirect isn't working, 
+ because it's only going to redirect to the sign in page if they aren't logged in. 
+ Pretty interesting yet annoying issue though.
