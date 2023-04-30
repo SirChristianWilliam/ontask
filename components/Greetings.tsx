@@ -3,9 +3,13 @@ import { cookies } from "next/headers";
 import Button from "./Button";
 import Card from "./Card";
 import { delay } from "@/lib/async";
+// The data for this page is on this page. It is self contained. 
+// If the data was passed down as a prop from the page.tsx in the 
+// app folder, we would not have been able to use the 
+// skeleton loading ( which is a server process not client function )
 
 const getData = async () => {
-  await delay(2000);
+  await delay(1000);
   const user = await getUserFromCookie(cookies());
   return user;
 };

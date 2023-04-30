@@ -18,7 +18,8 @@ Technologies & Concepts Used:
 12. React-Feather (library)
 13. Auth 
 14. JWT (JSON web tokens)
-15. 
+15. Using Suspense for Skeleton component rendering
+16. 
  
 
  Saturday April 29th notes:
