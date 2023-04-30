@@ -2,7 +2,7 @@ export const fetcher = async ({url, method, body, json = true}) => {
    // Scott Moss recommends to scrap Axios, use fetch when possible
     const res = await fetch(url, {
         method, 
-        ...body(body && {body: JSON.stringify(body)}), 
+        ...(body && {body: JSON.stringify(body)}), 
         headers: {
             Accept: 'application/json',
             'Content-Type': 'application/json'
