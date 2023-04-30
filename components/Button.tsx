@@ -53,7 +53,7 @@ export interface ButtonProps
 
 const Button: FC<ButtonProps> = ({ children, intent, size, className, ...props }) => {
     return (
-        <button className={buttonClasses(intent, size, className)}
+        <button className={buttonClasses({intent, size, className})}
             {...props}>
             {children}
         </button>
