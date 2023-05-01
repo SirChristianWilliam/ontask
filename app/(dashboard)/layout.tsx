@@ -7,7 +7,6 @@ import { Suspense } from 'react';
 import GreetingsSkeleton from '@/components/GreetingsSkeleton';
 
 export default function DashboardRootLayout({ children }) {
-
     return (
         <html lang="en">
             <head />
@@ -18,7 +17,8 @@ export default function DashboardRootLayout({ children }) {
                     </Suspense>
                     {children}
                 </GlassPane>
+                <div id="modal"></div>
             </body>
         </html>
     )
-}
+};
