@@ -16,6 +16,7 @@
     "@types/node": "18.15.12",
     "@types/react": "18.0.37",
     "@types/react-dom": "18.0.11",
+    "@types/react-modal": "^3.16.0",
     "bcrypt": "5.1.0",
     "class-variance-authority": "0.4.0",
     "clsx": "1.2.1",
@@ -27,7 +28,8 @@
     "next": "13.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-feather": "2.0.10"
+    "react-feather": "2.0.10",
+    "react-modal": "^3.16.1"
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.0",
