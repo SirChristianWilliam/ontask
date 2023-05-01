@@ -27,11 +27,7 @@ export default async function signin(req: NextApiRequest, res: NextApiResponse) 
       );
       res.status(201);
       res.json({});
-    }
-    res.status(401);
-    res.json({})
-  } else {
-    res.status(402)
-    res.json({})
-  }
-}
+    } else {
+      res.status(401);
+      res.json({})
+    }}}
