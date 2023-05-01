@@ -17,6 +17,9 @@ const NewProject = () => {
     e.preventDefault();
     await createNewProject(name);
     closeModal();
+    window.location.reload(); // I added this
+    // Now add a redirect to the newly created task
+    
   };
 
   return (
