@@ -36,3 +36,8 @@ Technologies & Concepts Used:
  cookies ( the user logged in ) and that's why the redirect isn't working, 
  because it's only going to redirect to the sign in page if they aren't logged in. 
  Pretty interesting yet annoying issue though.
+
+ Sunday April 30th notes:
+
+ Project ready for deployment, still requires a ton of 
+ work though! 
