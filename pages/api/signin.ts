@@ -19,7 +19,7 @@ export default async function signin(req: NextApiRequest, res: NextApiResponse) 
 
       res.setHeader(
         "Set-Cookie",
-        serialize(process.env.COOKIE_NAME, jwt, {
+        serialize(process.env.COOKIE_NAME ?? 'cookie-name', jwt, {
           httpOnly: true,
           path: "/",
           maxAge: 60 * 60 * 24 * 7,
